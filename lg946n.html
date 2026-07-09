@@ -117,7 +117,17 @@
 
     <div class="container">
         <h2>Hình Ảnh Hoạt Động Thực Tế</h2>
-        <img src="anhthucte946n.jpg" alt="Máy xúc lật LG946N" class="main-img">
+        <div style="text-align: center; margin-bottom: 15px;">
+        <img id="main-img" src="anhthucte946n.jpg" alt="Máy xúc lật LG946N" class="main-img" style="width: 100%; max-width: 600px; height: auto; border-radius: 8px;">
+    </div>
+
+    <div class="image-gallery" style="display: flex; justify-content: center; gap: 10px; margin-bottom: 25px;">
+        <img src="anhthucte946n.jpg" onclick="changeImage(this.src)" style="width: 80px; height: 60px; object-fit: cover; border-radius: 4px; cursor: pointer; border: 2px solid #ffb703;">
+        <img src="lg946nn.jpg" onclick="changeImage(this.src)" style="width: 80px; height: 60px; object-fit: cover; border-radius: 4px; cursor: pointer; border: 1px solid #ddd;">
+        <img src="lg946nnn.jpg" onclick="changeImage(this.src)" style="width: 80px; height: 60px; object-fit: cover; border-radius: 4px; cursor: pointer; border: 1px solid #ddd;">
+        <img src="lg946nnnn.jpg" onclick="changeImage(this.src)" style="width: 80px; height: 60px; object-fit: cover; border-radius: 4px; cursor: pointer; border: 1px solid #ddd;">
+
+   </div>
 
         <ul style="padding-left: 20px; line-height: 1.8;">
                 <li><strong>Động cơ siêu khủng 92 kW:</strong> Tải trọng nâng thực tế 2.5 tấn, dung tích gầu lớn 1.5 m³.</li>
@@ -173,6 +183,11 @@
             <span class="text-label">Chat Zalo</span>
         </a>
     </div>
-
+<script>
+function changeImage(imgSrc) {
+    // Tìm đến ảnh lớn bằng id 'main-img' và thay đổi đường dẫn sang ảnh vừa click
+    document.getElementById('main-img').src = imgSrc;
+}
+</script>
 </body>
 </html>
