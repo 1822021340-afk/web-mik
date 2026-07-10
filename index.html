@@ -839,9 +839,23 @@
         <p style="margin-top: 10px; color: #555; line-height: 1.6;">Quý khách luôn được khuyến khích đến trực tiếp bãi xe của MIK Miền Nam tại TP.HCM để xem máy, kiểm tra cấu hình thực tế và lái thử xe trước khi quyết định mua hàng.</p>
     </details>
 </div>
-<!-- Tawk.to Live Chat Chỉnh Sửa -->
+<!-- Tawk.to Live Chat Chỉnh Sửa Vị Trí -->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+Tawk_API.customStyle = {
+    visibility : {
+        desktop : {
+            position : 'bottom right',
+            xOffset : 100, // Dịch sang trái 100px trên máy tính để né nút Zalo
+            yOffset : 20
+        },
+        mobile : {
+            position : 'bottom right',
+            xOffset : 20,
+            yOffset : 90 // Đẩy lên cao trên điện thoại để né nút Zalo
+        }
+    }
+};
 (function(){
 var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
 s1.async=true;
